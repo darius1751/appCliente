@@ -1,0 +1,22 @@
+<form>
+    <div class="form-group">
+      <label for="txtNombre">Nombre Completo:</label>
+      <input type="text" class="form-control" id="txtNombre" minlength="5"  placeholder="Ingrese su Nombre Completo" [(ngModel)]='cliente.nombre' [ngModelOptions]='{standalone:true}'>
+      <small id="smllNombre" class="form-text text-muted">El nombre debe tener mas de 5 caracteres</small>
+    </div>
+    <div class="form-group">
+        <label for="txtCedula">Cedula:</label>
+        <input type="text" class="form-control" id="txtCedula" placeholder='Ingrese su cedula' minlength="8" maxlength="10" [(ngModel)]='cliente.cedula' [ngModelOptions]='{standalone:true}' required>
+        <small id="smllNombre" class="form-text text-muted">La cedula debe tener entre 8 y 10 caracteres</small>
+    </div>
+    <div class="form-group">
+        <label for="txtTelefono">Telefono:</label>
+        <input type="text" class="form-control" id="txtTelefono" placeholder='Ingrese su Telefono'  minlength="8" maxlength="10" [(ngModel)]='cliente.telefono' [ngModelOptions]='{standalone:true}'required>
+    </div>
+    <div class="form-group">
+        <label for="txtNombre">Direccion:</label>
+        <input type="text" class="form-control" id="txtNombre" placeholder='Ingrese su direccion'minlength="5" [(ngModel)]='cliente.direccion' [ngModelOptions]='{standalone:true}'required>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+  </form>
+  
